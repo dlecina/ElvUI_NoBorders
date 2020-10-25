@@ -7,7 +7,7 @@
 ## Title: |cff1784d1ElvUI|r |cff4beb2cNoBorders|r
 ## Author: dlecina
 ## Credit: Azilroka, Benik, Blazeflack
-## Version: 1.0.0
+## Version: 1.0.1
 ## Notes: A reduced version of CustomTweaks to remove the borders in ElvUI.
 ## RequiredDeps: ElvUI
 ## DefaultState: enabled
