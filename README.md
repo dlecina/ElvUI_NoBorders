@@ -63,6 +63,8 @@ To help translate this add-on, use the [issue tracker].
 
 [World of Warcraft]: https://worldofwarcraft.com (World of Warcraft)
 
+[Issue Tracker]: https://github.com/dlecina/ElvUI_NoBorders/issues (Report an Issue)
+
 [CurseForge]: https://www.curseforge.com/wow/addons/elvui-noborders (View on CurseForge)
 [GitHub]: https://github.com/dlecina/ElvUI_NoBorders (View on GitHub)
 
