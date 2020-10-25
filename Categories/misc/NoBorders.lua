@@ -25,17 +25,6 @@ local function GetTemplate(t, isUnitFrameElement)
 	end
 end
 
-local function CustomSetBackdropBorderColor(self, frame, ...)
-	if frame.pixelBorders then
-		for _, v in pairs(E.PixelBorders) do
-			frame.pixelBorders[v]:SetVertexColor(0,0,0,0)
-		end
-	end
-end
---@non-retail@
-hooksecurefunc(E, "SetBackdropBorderColor", CustomSetBackdropBorderColor)
---@end-non-retail@
-
 --Code taken from ElvUI and modified to remove borders
 local function CustomSetTemplate(f, t, glossTex, ignoreUpdates, forcePixelMode, isUnitFrameElement)
 	GetTemplate(t, isUnitFrameElement)
@@ -44,29 +33,10 @@ local function CustomSetTemplate(f, t, glossTex, ignoreUpdates, forcePixelMode, 
 		f:SetBackdropColor(backdropr, backdropg, backdropb, backdropa)
 		if not E.PixelMode and not f.forcePixelMode then
 			if f.iborder then
-				--@retail@
-				local border = CreateFrame('Frame', nil, f, 'BackdropTemplate')
-				border:SetBackdrop(backdrop)
-				border:SetBackdropBorderColor(0, 0, 0, 1)
-				border:SetInside(f, 1, 1)
-				f.iborder = border
-				--@end-retail@
-				--@non-retail@
 				f.iborder:SetBackdropBorderColor(0, 0, 0, 0)
-				--@end-non-retail@
 			end
 			if f.oborder then
-				--@retail@
-				local border = CreateFrame('Frame', nil, f)
-				E:BuildPixelBorders(border, true)
-				E:SetBackdrop(border, true, nil, E.mult, E.mult, E.mult, E.mult, E.mult)
-				E:SetBackdropBorderColor(border, 0, 0, 0, 1)
-				border:SetAllPoints()
-				f.oborder = border
-				--@end-retail@
-				--@non-retail@
 				f.oborder:SetBackdropBorderColor(0, 0, 0, 0)
-				--@end-non-retail@
 			end
 		end
 	end
