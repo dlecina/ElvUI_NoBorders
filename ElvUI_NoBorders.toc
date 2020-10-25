@@ -1,0 +1,22 @@
+#@retail@
+## Interface: 90001
+#@end-retail@
+#@non-retail@
+# ## Interface: 11305
+#@end-non-retail@
+## Title: |cff1784d1ElvUI|r |cff4beb2cNoBorders|r
+## Author: dlecina
+## Credit: Azilroka, Benik, Blazeflack
+## Version: 1.0.0
+## Notes: A reduced version of CustomTweaks to remove the borders in ElvUI.
+## RequiredDeps: ElvUI
+## DefaultState: enabled
+
+## X-Website: https://github.com/dlecina/ElvUI_NoBorders
+## X-Category: Interface Enhancements
+## X-Credits: Azilroka, Benik, Blazeflack, dlecina
+## X-Tukui-ProjectFolders: ElvUI_NoBorders
+
+locales.lua
+core.lua
+categories\load_categories.xml
