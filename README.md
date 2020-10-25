@@ -35,6 +35,8 @@ Install the package through your preferred add-on manager or extract the archive
 - **Classic:** `World of Warcraft\_classic_\Interface\AddOns`
 - **Retail:** `World of Warcraft\_retail_\Interface\AddOns`
 
+Remember to enable the tweak in the ElvUI options after installation!
+
 ## [Credits][Top]
 
 - _Azilroka, Benik, Blazeflack_ for [CustomTweaks].

@@ -116,12 +116,12 @@ function CT:ConfigTable()
 			header1 = {
 				order = 1,
 				type = "header",
-				name = format(L["%s version %s by Blazeflack of tukui.org"], CT.Title, CT:ColorStr(CT.Version)),
+				name = format(L["%s version %s by dlecina"], CT.Title, CT:ColorStr(CT.Version)),
 			},
 			description1 = {
 				order = 2,
 				type = "description",
-				name = format(L["%s is a collection of various tweaks for ElvUI. New features or changes have been requested by regular users and then fulfilled by members of the Tukui community."], CT.Title),
+				name = format(L["%s is a reduced version of CustomTweaks, a collection of various tweaks for ElvUI."], CT.Title),
 			},
 			spacer1 = {
 				order = 3,
@@ -143,16 +143,16 @@ function CT:ConfigTable()
 				type = "input",
 				width = "full",
 				name = L["AddOn Description / Download"],
-				get = function(info) return "http://www.tukui.org/addons/index.php?act=view&id=254" end,
-				set = function(info) return "http://www.tukui.org/addons/index.php?act=view&id=254" end,
+				get = function(info) return "https://www.curseforge.com/wow/addons/elvui-noborders" end,
+				set = function(info) return "https://www.curseforge.com/wow/addons/elvui-noborders" end,
 			},
 			tickets = {
 				order = 7,
 				type = "input",
 				width = "full",
 				name = L["Report Bugs / Request Tweaks"],
-				get = function(info) return "http://git.tukui.org/Blazeflack/elvui-NoBorders/issues" end,
-				set = function(info) return "http://git.tukui.org/Blazeflack/elvui-NoBorders/issues" end,
+				get = function(info) return "https://github.com/dlecina/ElvUI_NoBorders/issues" end,
+				set = function(info) return "https://github.com/dlecina/ElvUI_NoBorders/issues" end,
 			},
 			credit = {
 				order = -1,

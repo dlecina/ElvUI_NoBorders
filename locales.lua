@@ -3,9 +3,9 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0-ElvUI");
 local L = AceLocale:NewLocale("ElvUI", "enUS", true);
 if not L then return; end
 
-L["%s is a collection of various tweaks for ElvUI. New features or changes have been requested by regular users and then fulfilled by members of the Tukui community."] = true;
+L["%s is a reduced version of CustomTweaks, a collection of various tweaks for ElvUI."] = true;
 L["%s is the author of the following tweaks:"] = true;
-L["%s version %s by Blazeflack of tukui.org"] = true;
+L["%s version %s by dlecina"] = true;
 L["Actionbar Tweaks"] = true;
 L["Add 'Stack' Button"] = true;
 L["AddOn Description / Download"] = true;
