@@ -13,6 +13,7 @@ jobs:
       CF_API_KEY: ${{ secrets.CF_API_KEY }}
       WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
       GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+      WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
 
     steps:
       - name: Clone Project
@@ -29,7 +30,12 @@ jobs:
       - name: Package Release for Classic
         uses: BigWigsMods/packager@master
         with:
-          args: -g 1.13.5
+          args: -g classic
+      
+      - name: Package Release for Burning Crusade Classic
+        uses: BigWigsMods/packager@master
+        with:
+          args: -g bcc
 
       - name: Package Release for Retail
         uses: BigWigsMods/packager@master
