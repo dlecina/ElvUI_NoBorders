@@ -52,6 +52,7 @@ To help translate this add-on, use the [issue tracker].
 ## [Links][Top]
 
 - [CurseForge][CurseForge]
+- [Wago][Wago]
 
 [Links]: #
 
@@ -68,6 +69,7 @@ To help translate this add-on, use the [issue tracker].
 [Issue Tracker]: https://github.com/dlecina/ElvUI_NoBorders/issues (Report an Issue)
 
 [CurseForge]: https://www.curseforge.com/wow/addons/elvui-noborders (View on CurseForge)
+[Wago]: https://addons.wago.io/addons/elvui-noborders (View on Wago Addons)
 [GitHub]: https://github.com/dlecina/ElvUI_NoBorders (View on GitHub)
 
 [Top]: #Top (Top of the Page)
