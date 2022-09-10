@@ -38,5 +38,10 @@ jobs:
         with:
           args: -g bcc
 
+      - name: Package Release for Wrath of the Lich King Classic
+        uses: BigWigsMods/packager@master
+        with:
+          args: -g wrath
+
       - name: Package Release for Retail
         uses: BigWigsMods/packager@master
