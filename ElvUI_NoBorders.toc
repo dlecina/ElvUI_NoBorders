@@ -16,6 +16,7 @@
 ## X-Category: Interface Enhancements
 ## X-Credits: Azilroka, Benik, Blazeflack, dlecina
 ## X-Tukui-ProjectFolders: ElvUI_NoBorders
+## X-Curse-Project-ID: 415331
 ## X-Wago-ID: XrNkbzGa
 
 locales.lua
