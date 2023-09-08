@@ -1,3 +1,7 @@
+## 1.2.2
+
+- Add Curse-Project-ID
+
 ## 1.2.1
 
 - Updated the `Interface` version for _Retail_ to `100107`.
