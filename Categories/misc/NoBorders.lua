@@ -53,7 +53,9 @@ end
 local function addapi(object)
 	if not object.isCTHooked then
 		local mt = getmetatable(object).__index
-		hooksecurefunc(mt, "SetTemplate", CustomSetTemplate)
+		local _, _ = pcall(function()
+           hooksecurefunc(mt, "SetTemplate", CustomSetTemplate)
+		end)
 		object.isCTHooked = true
 	end
 end
