@@ -8,6 +8,8 @@ local pairs, ipairs = pairs, ipairs
 local tinsert, tsort = table.insert, table.sort
 local format = string.format
 
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
+
 CT.Version = GetAddOnMetadata(addon, "Version")
 CT.Title = "|cff4beb2cNoBorders|r"
 CT.Configs = {}

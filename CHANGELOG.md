@@ -1,3 +1,8 @@
+## 1.2.3
+
+- Fixed `GetAddOnMetadata` for 11.02
+- Updated the `Interface` version
+
 ## 1.2.2
 
 - Add Curse-Project-ID

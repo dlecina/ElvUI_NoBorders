@@ -26,26 +26,26 @@ local function GetTemplate(t, isUnitFrameElement)
 end
 
 --Code taken from ElvUI and modified to remove borders
-local function CustomSetTemplate(f, t, glossTex, ignoreUpdates, forcePixelMode, isUnitFrameElement)
-	GetTemplate(t, isUnitFrameElement)
+local function CustomSetTemplate(frame, template, glossTex, ignoreUpdates, forcePixelMode, isUnitFrameElement, isNamePlateElement, noScale)
+	GetTemplate(template, isUnitFrameElement)
 
-	if t ~= 'NoBackdrop' then
-		f:SetBackdropColor(backdropr, backdropg, backdropb, backdropa)
-		if not E.PixelMode and not f.forcePixelMode then
-			if f.iborder then
-				f.iborder:SetBackdropBorderColor(0, 0, 0, 0)
+	if template ~= 'NoBackdrop' then
+		frame:SetBackdropColor(backdropr, backdropg, backdropb, backdropa)
+		if not E.PixelMode and not frame.forcePixelMode then
+			if frame.iborder then
+				frame.iborder:SetBackdropBorderColor(0, 0, 0, 0)
 			end
-			if f.oborder then
-				f.oborder:SetBackdropBorderColor(0, 0, 0, 0)
+			if frame.oborder then
+				frame.oborder:SetBackdropBorderColor(0, 0, 0, 0)
 			end
 		end
 	end
 
-	f:SetBackdropBorderColor(0, 0, 0, 0)
-	f.ignoreBorderColors = true
+	frame:SetBackdropBorderColor(0, 0, 0, 0)
+	frame.ignoreBorderColors = true
 	
-	if isUnitFrameElement and t ~= "Transparent" then
-		f:SetBackdropColor(0,0,0,0)
+	if isUnitFrameElement and template ~= "Transparent" then
+		frame:SetBackdropColor(0,0,0,0)
 	end
 end
 
