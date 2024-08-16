@@ -88,6 +88,8 @@ L["Tweaks"] = true;
 L["Unitframe Tweaks"] = true;
 L["Use Transparent Template"] = true;
 L["Used/Total"] = true;
+L["Addon has been loaded. Good gaming!"] = true;
+L["Addon was unable to set up one or more frames."] = true;
 
 --We don't need the rest if we're on enUS or enGB locale, so stop here.
 if GetLocale() == "enUS" then return end
