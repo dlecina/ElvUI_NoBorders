@@ -62,7 +62,7 @@ local function addapi(object)
 			-- Use for local debugging
 			-- local objectName = object:GetName() or object:GetModule()
 			-- print(fullAddonName..": '"..objectName.."' failed to hook.")
-			print(fullAddonName..": "..L"Addon was unable to set up one or more frames.")
+			print(fullAddonName..": "..L["Addon was unable to set up one or more frames."])
 		else
 			object.isCTHooked = true
 		end
