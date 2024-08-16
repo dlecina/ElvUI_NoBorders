@@ -49,17 +49,36 @@ local function CustomSetTemplate(frame, template, glossTex, ignoreUpdates, force
 	end
 end
 
+local fullAddonName = "|cff4beb2cElvUI " .. CT.Title .. " v." .. CT.Version .. "|r"
+
 --Code taken from ElvUI
 local function addapi(object)
 	if not object.isCTHooked then
 		local mt = getmetatable(object).__index
-		hooksecurefunc(mt, "SetTemplate", CustomSetTemplate)
-		object.isCTHooked = true
+		local status, _ = pcall(function()
+			hooksecurefunc(mt, "SetTemplate", CustomSetTemplate)
+		end)
+		if not status then
+			-- Use for local debugging
+			-- local objectName = object:GetName() or object:GetModule()
+			-- print(fullAddonName..": '"..objectName.."' failed to hook.")
+			print(fullAddonName..": "..L["Addon was unable to set up one or more frames."])
+		else
+			object.isCTHooked = true
+		end
 	end
+end
+
+local function OnAddonLoaded(self, event, addonName)
+    if addonName == "ElvUI_NoBorders" then
+        print(fullAddonName .. ": ".. L["Addon has been loaded. Good gaming!"])
+    end
 end
 
 local handled = {["Frame"] = true}
 local object = CreateFrame("Frame")
+object:RegisterEvent("ADDON_LOADED")
+object:SetScript("OnEvent", OnAddonLoaded)
 addapi(object)
 
 object = EnumerateFrames()
